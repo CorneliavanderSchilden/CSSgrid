@@ -1,0 +1,64 @@
+header {
+  grid-area: header;
+  background-color: lightgreen;
+  border: 1px solid lightgreen;
+  margin: 2px;
+}
+
+main {
+  grid-area: main;
+  background-color: lightpink;
+  border: 1px solid lightpink;
+  margin: 2px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  margin: 2px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  margin: 2px;
+}
+
+p {
+  font-size: 10px;
+}
+
+.grid-container {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'main'
+  'aside'
+  'footer'
+}
+
+@media (min-width: 700px) {
+  .grid-container {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-template-areas: 
+    'header main main'
+    'header main main'
+    'header aside aside'
+    'header aside aside'
+    'header footer footer'
+    }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-areas: 
+    'header main aside'
+    'header main aside'
+    'header main aside'
+    'header footer aside'
+  }
+}
